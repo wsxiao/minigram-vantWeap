@@ -1,0 +1,24 @@
+
+
+<!-- <van-popup v-model="popDisplay.workCycleStart" position="bottom" :overlay="true" class='picker-style'>
+   <van-datetime-picker
+		type="date"
+		value="{{ currentDate }}"
+		bind:confirm="confirm"
+		min-date="{{ minDate }}"
+		formatter="{{ formatter }}"
+	/>
+ </van-popup> -->
+
+ <view class="top">
+	<view class="item left">2020-09-09</view>
+	<van-icon name="underway-o" color="#49acf1"/>
+	<view class="item right">2020-10-10</view>
+ </view>
+
+<van-tabs sticky>
+  <van-tab title="早晨">空腹、早餐后</van-tab>
+  <van-tab title="中午">午餐前、午餐后、</van-tab>
+  <van-tab title="下午">晚餐前、晚餐后</van-tab>
+  <van-tab title="夜间">睡前</van-tab>
+</van-tabs>

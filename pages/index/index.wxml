@@ -1,0 +1,73 @@
+<view class="page-body">
+  <view class="top">
+    <view class="comp" bindtap="jumpPage" data-type="/pages/coopInfo/coopInfo">公司简介</view>
+    <view class="current-day" bindtap="haddleCalendar">今日<van-icon name="notes-o" /> </view>
+    <view class="atri" bindtap="jumpPage" data-type="/pages/aritcle/aritcle">专栏</view>
+  </view>
+  <image class="bg-image" src="{{activeBgImg}}" mode="widthFix"></image>
+
+  <view class="page-main">
+    <van-tabs active="{{ activeTab }}" bind:change="changeTime" sticky="true" >
+      <van-tab wx:for="{{tabList}}" title="{{item.title}}" name='{{item.value}}' wx:key="index"></van-tab>
+
+    </van-tabs>
+
+    <view class="form-data">
+      <view class="enter-number">
+        <view class="item left">
+          <van-field value="{{ beforeInput }}" border="{{ false }}" bind:blur="saveData" data-type="beforeInput" maxlength="5" type="digit" input-align="center"/>
+          <text class="label">餐前</text>
+        </view>
+        <view class="slider"></view>
+        <view class="item right">
+          <van-field value="{{ afterInput }}" border="{{ false }}" bind:blur="saveData" data-type="afterInput" maxlength="5" type="digit" input-align="center"/>
+          <text class="label">餐后</text>
+        </view>
+      </view> 
+
+      <view class="body-data">
+        <image class="user-logo" src="{{userInfo.avatarUrl}}"></image>
+        <text class="history" bindtap="jumpPage" data-type="/pages/history/history">历史记录</text>
+        <view class="item">
+          <text class="label">性别</text>
+          <text class="label">女</text>
+        </view>
+        <view class="item">
+          <text class="label">年龄</text>
+          <text class="label">35岁</text>
+        </view>
+        <view class="item">
+          <text class="label">身高</text>
+          <text class="label">170cm</text>
+        </view>
+        <view class="item">
+          <text class="label">体重</text>
+          <text class="label">70kg</text>
+        </view>
+        <view class="item">
+          <text class="label">糖尿病</text>
+          <text class="label">一型糖尿病</text>
+        </view>
+        <view class="item">
+          <text class="label">高血压</text>
+          <text class="label">无</text>
+        </view>
+      </view>
+      
+    </view>
+  </view>
+</view>
+
+
+<van-popup show="{{ !hasUserInfo && canIUse }}" bind:click="onClose">
+  <view class="popup-content">
+    <view class="title">授权提示</view>
+    <text>需要获取你的头像和昵称，点击下方按钮进行授权</text>
+    <button class="get-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权 </button>
+  </view>
+</van-popup>
+
+<!-- 日历 -->
+<van-calendar class="calendar-button" show="{{ calendarVisible }}" bind:close="onClose" allow-same-day="true" bind:confirm="onConfirm"  min-date="{{ minDate }}" default-date="{{defaultDate}}"/>
+
+

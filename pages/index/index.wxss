@@ -1,0 +1,131 @@
+/**index.wxss**/
+.calendar-button button{
+  width:100% !important;
+}
+.top{
+  position: absolute;
+  top:30rpx;
+  left:30rpx;
+  width:calc(100% - 60rpx);
+  z-index: 100;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+}
+.current-day{
+  color:#fff;
+  font-size: 36rpx;
+  border:2rpx solid #efefef;
+  border-radius: 16rpx;
+  padding:5rpx 50rpx 5rpx 20rpx;
+  display: inline-block;
+  min-width: 200rpx;
+  text-align: center;
+  position: relative;
+}
+.current-day .van-icon {
+  position: absolute;
+  right:10rpx;
+  top:10rpx;
+}
+.history{
+  float: right;
+  margin-top: 20rpx;
+  margin-right: 30rpx;
+}
+
+.page-body .bg-image{
+  width:100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.page-main{
+  z-index: 100;
+  position: absolute;
+  top:160rpx;
+  left:30rpx;
+  width:calc(100% - 60rpx);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+.page-main .enter-number{
+  display: flex;
+  justify-content: space-between;
+  padding:70rpx;
+
+}
+.enter-number .slider{
+  width:2rpx;
+  height: 160rpx;
+  background-color: #fff;
+}
+.enter-number .item{
+  border:1px solid #fff;
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  color:#131313;
+  font-size: 60rpx;
+  text-align: center;
+  line-height: 180rpx;
+  position: relative;
+}
+.enter-number .item .label{
+  position: absolute;
+  bottom:-70rpx;
+  left:50rpx;
+  display: inline-block;
+  line-height: 60rpx;
+  font-size: 36rpx;
+}
+.enter-number .item .van-cell {
+  padding: 66rpx 20rpx;
+  background-color: rgba(0,0,0,0);
+  border-radius: 50%;
+  font-size: 60rpx;
+  text-align: center;
+
+}
+
+.body-data{
+  background-color: #fff;
+  padding:30rpx 0;
+}
+.user-logo{
+  width:80rpx;
+  height: 80rpx;
+  border:1px solid #ddd;
+  border-radius: 50%;
+  margin-left: 30rpx;
+  margin-bottom: 30rpx;
+}
+.body-data .item{
+  padding:20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  background-color: #F5F7FA;
+  /* background-color: rgba(000,000,000, 0.4); */
+
+}
+
+.van-popup{
+  border-radius: 30rpx;
+}
+.popup-content{
+  padding:40rpx 60rpx;
+}
+.popup-content .title{
+  font-size: 36rpx;
+  color: #000;
+  text-align: center;
+  margin-bottom:30rpx;
+}
+.popup-content .get-button{
+  margin-top: 30rpx;
+  background-color:rgb(30,167,12);
+  color:#fff;
+}
+

@@ -1,0 +1,15 @@
+.top{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50rpx;
+}
+.top .item{
+	min-width: 240rpx;
+	text-align: center;
+	border:2rpx solid #ccc;
+	border-radius: 10rpx;
+	margin:0 15rpx;
+	line-height: 60rpx;
+	font-size: 32rpx;
+}
