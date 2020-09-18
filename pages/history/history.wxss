@@ -1,3 +1,19 @@
+
+.picker-style .van-picker__title {
+	color: #595959;
+}
+.van-popup{
+	width:100%;
+	position: fixed;
+
+}
+/* .picker-style .van-popup--center{
+	right:0;
+	bottom:0;
+} */
+
+
+
 .top{
 	display: flex;
 	align-items: center;
@@ -12,4 +28,36 @@
 	margin:0 15rpx;
 	line-height: 60rpx;
 	font-size: 32rpx;
+}
+.data-box{
+	border:1rpx solid #ccc;
+	font-size: 25rpx;
+}
+.data-box .item text{
+	display: inline-block;
+	width:11%;
+	padding: 10rpx 0;
+	border-right:1rpx solid #ccc;
+	border-bottom: 1rpx solid #ccc;
+	text-align: center;
+	vertical-align: middle;
+}
+.data-box .item text:last-child{
+	border-right:none;
+}
+
+.grey{
+	color: #a6a4a1; 
+}
+.green{
+	color: #16a323;
+}
+.orange{
+	color: #f7a60a;
+}	
+.red{
+	color: #f70a2b;
+}
+.perple{
+	color: #c418f6;
 }

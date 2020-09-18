@@ -1,24 +1,36 @@
 
 
-<!-- <van-popup v-model="popDisplay.workCycleStart" position="bottom" :overlay="true" class='picker-style'>
+<van-popup show="{{datePupVisible}}" position="bottom">
    <van-datetime-picker
 		type="date"
 		value="{{ currentDate }}"
-		bind:confirm="confirm"
+		bind:confirm="confirmDate"
+		bind:cancel="onClose"
 		min-date="{{ minDate }}"
-		formatter="{{ formatter }}"
 	/>
- </van-popup> -->
+ </van-popup>
 
  <view class="top">
-	<view class="item left">2020-09-09</view>
+	<view class="item left" bindtap="openDate" data-type="start">{{startDate}}</view>
 	<van-icon name="underway-o" color="#49acf1"/>
-	<view class="item right">2020-10-10</view>
+	<view class="item right" bindtap="openDate" data-type="end">{{endDate}}</view>
  </view>
 
-<van-tabs sticky>
-  <van-tab title="早晨">空腹、早餐后</van-tab>
-  <van-tab title="中午">午餐前、午餐后、</van-tab>
-  <van-tab title="下午">晚餐前、晚餐后</van-tab>
-  <van-tab title="夜间">睡前</van-tab>
-</van-tabs>
+<view class="data-box">
+	<view class="item">
+		<text>数据</text>
+		<text>凌晨</text>
+		<text>空腹</text>
+		<text>早餐后</text>
+		<text>午餐前</text>
+		<text>午餐后</text>
+		<text>晚餐前</text>
+		<text>晚餐后</text>
+		<text>睡前</text>
+	</view>
+
+	<view class="item" wx:for="{{resData}}" wx:key="index" >
+		<text>{{item.time}}</text>
+		<text wx:for="{{item.listTemp}}" class="{{obj.className}}" wx:for-item="obj" wx:key="index">{{obj.value}}</text>
+	</view>
+</view>

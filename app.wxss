@@ -12,3 +12,6 @@ view, text{
   box-sizing: border-box;
   font-family: PingFangSC-Regular;
 }
+page{
+  height: 100%;
+}

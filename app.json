@@ -3,7 +3,8 @@
 		"pages/index/index",
 		"pages/history/history",
 		"pages/coopInfo/coopInfo",
-		"pages/aritcle/aritcle"
+		"pages/aritcle/aritcle",
+		"pages/question/question"
 	],
 	"window": {
 		"backgroundTextStyle": "light",
@@ -18,6 +19,7 @@
 		"van-field": "@vant/weapp/field/index",
 		"van-popup": "@vant/weapp/popup/index",
 		"van-tab": "@vant/weapp/tab/index",
-    "van-tabs": "@vant/weapp/tabs/index"
+		"van-tabs": "@vant/weapp/tabs/index",
+		"van-datetime-picker": "@vant/weapp/datetime-picker/index"
 	}
 }

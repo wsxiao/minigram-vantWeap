@@ -1,0 +1,139 @@
+
+
+<view class="page-main">
+	<!-- 立即体验 -->
+	<view>
+		<view class="block block-left">
+			<view class="question">
+				您好，我是康康。我的本领是根据六个简单的问题，为您建立一份私人健康档案。
+				<view class="btn rightNow" bindtap="clickBtn" data-name="flag" data-value="true">立即体验</view>
+			</view>
+		</view>
+
+		<view class="block block-right" wx:if="{{quesitionInfo.flag}}">
+			<view class="answer">立即体验</view>
+		</view>
+	</view>
+
+	<!-- 性别 -->
+	<view wx:if="{{quesitionInfo.flag}}">
+		<view class="block block-left">
+			<view class="question">
+				<view>请问您的性别？</view>	
+				<view class="btn six-btn" bindtap="clickBtn" data-name="xingbie" data-value="0">男士</view>
+				<view class="btn six-btn" bindtap="clickBtn" data-name="xingbie" data-value="1">女士</view>
+			</view>
+		</view>
+
+		<view class="block block-right" wx:if="{{quesitionInfo.xingbie}}">
+			<view class="answer">{{quesitionInfo.xingbie == 0?'男士':'女士'}}</view>
+		</view>
+	</view>
+
+	<!-- 年龄 -->
+	<view wx:if="{{quesitionInfo.xingbie}}">
+		<view class="block block-left">
+			<view class="question">
+				请问您的年龄？
+			</view>
+		</view>
+
+		<view class="block block-right" wx:if="{{quesitionInfo.nianling}}">
+			<view class="answer">{{quesitionInfo.nianling}}</view>
+		</view>
+	</view>
+
+	<!-- 身高 -->
+	<view  wx:if="{{quesitionInfo.nianling}}">
+		<view class="block block-left">
+			<view class="question">
+				请问您的身高？
+			</view>
+		</view>
+
+		<view class="block block-right"  wx:if="{{quesitionInfo.shengao}}">
+			<view class="answer">{{quesitionInfo.shengao}}</view>
+		</view>
+	</view>
+
+	<!-- 体重 -->
+	<view>
+		<view class="block block-left"  wx:if="{{quesitionInfo.shengao}}">
+			<view class="question">
+				请问您的体重？
+			</view>
+		</view>
+
+		<view class="block block-right"  wx:if="{{quesitionInfo.tizhong}}">
+			<view class="answer">{{quesitionInfo.tizhong}}</view>
+		</view>
+	</view>
+
+	<!-- 糖尿病 -->
+	<view wx:if="{{quesitionInfo.tizhong}}">
+		<view class="block block-left">
+			<view class="question">
+				请问您是否有糖尿病？
+			</view>
+		</view>
+
+		<view class="block block-right" wx:if="{{quesitionInfo.tangniaobing}}">
+			<view class="answer">{{quesitionInfo.tangniaobing}}</view>
+		</view>
+	</view>
+
+	<!-- 高血压 -->
+	<view wx:if="{{quesitionInfo.tangniaobing}}">
+		<view class="block block-left">
+			<view class="question">
+				<view>请问您是否有高血压？</view>	
+				<view class="btn six-btn" bindtap="clickBtn" data-name="gaoxueya" data-value="0">没有</view>
+				<view class="btn six-btn" bindtap="clickBtn" data-name="gaoxueya" data-value="1">有</view>
+			</view>
+		</view>
+
+		<view class="block block-right" wx:if="{{quesitionInfo.gaoxueya}}">
+			<view class="answer">{{quesitionInfo.gaoxueya == 0 ? '没有':'有'}}</view>
+		</view>
+	</view>
+
+	<!-- 访问信息 -->
+	<view class="box" wx:if="{{quesitionInfo.gaoxueya}}">
+		<view class="name">用户昵称: {{userInfo.nickName}}</view>
+		<view class="resBox">
+			<view class="left">
+				<image class="logo" src="{{userInfo.avatarUrl}}"></image>
+			</view>
+			<view class="right">
+				<view class="item"> <text class="label">性别：</text> <text class="value">{{quesitionInfo.xingbie == 0?'男':'女'}}</text> </view>
+				<view class="item"> <text class="label">年龄：</text> <text class="value">{{quesitionInfo.nianling || '-'}}</text> </view>
+				<view class="item"> <text class="label">身高：</text> <text class="value">{{quesitionInfo.shengao || '-'}}</text> </view>
+				<view class="item"> <text class="label">体重：</text> <text class="value">{{quesitionInfo.tizhong || '-'}}</text> </view>
+				<view class="item"> <text class="label">血糖类型：</text> <text class="value">{{quesitionInfo.tangniaobing || '-'}}</text> </view>
+				<view class="item"> <text class="label">血压病症：</text> <text class="value">{{quesitionInfo.gaoxueya ==0?'没有':'有'}}</text> </view>
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 选择年龄 -->
+<van-popup show="{{ quesitionInfo.xingbie && quesitionInfo.nianling == false}}" position="bottom">
+	<van-picker columns="{{ ageList }}" title="请选择年龄" show-toolbar bind:confirm="onConfirm" data-type="nianling"/>
+</van-popup>
+
+<!-- 选择身高 -->
+<van-popup show="{{ quesitionInfo.nianling && quesitionInfo.shengao == false}}" position="bottom">
+	<van-picker columns="{{ heightList }}" title="请选择身高" show-toolbar bind:confirm="onConfirm" data-type="shengao"/>
+</van-popup>
+
+<!-- 请选择体重 -->
+<van-popup show="{{ quesitionInfo.shengao && quesitionInfo.tizhong == false}}" position="bottom">
+	<van-picker columns="{{ weightList }}" title="请选择体重" show-toolbar bind:confirm="onConfirm" data-type="tizhong"/>
+</van-popup>
+
+<!-- 选择血糖类型 -->
+<van-popup show="{{ quesitionInfo.tizhong && quesitionInfo.tangniaobing == false}}" position="bottom">
+	<van-picker columns="{{ illnessList }}" title="请选择血糖类型" show-toolbar bind:confirm="onConfirm" data-type="tangniaobing"/>
+</van-popup>
