@@ -16,6 +16,11 @@
 	<view class="item right" bindtap="openDate" data-type="end">{{endDate}}</view>
  </view>
 
+<view class="color-desc grey"><van-icon name="stop" />偏低</view>
+<view class="color-desc green"><van-icon name="stop" />正常</view>
+<view class="color-desc orange"><van-icon name="stop" />偏高</view>
+<view class="color-desc red"><van-icon name="stop" />高</view>
+<view class="color-desc perple"><van-icon name="stop" />过高</view>
 <view class="data-box">
 	<view class="item">
 		<text>数据</text>

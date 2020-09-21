@@ -24,7 +24,8 @@ Page({
 
 	confirmDate(event){
 		let chooseDate = new Date(event.detail)
-		var dateTemp = chooseDate.getFullYear() + '-' + (chooseDate.getMonth()+1) + '-' + chooseDate.getDay()
+		var dateTemp = chooseDate.getFullYear() + '-' + (chooseDate.getMonth()+1) + '-' + chooseDate.getDate()
+		console.log('dateTemp:::j',dateTemp);
 		if(this.currentStartOrEnd == 'start'){
 			this.setData({
 				startDate: dateTemp,
