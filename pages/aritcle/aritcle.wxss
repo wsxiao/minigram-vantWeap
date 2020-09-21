@@ -1,1 +1,18 @@
-/* pages/aritcle/aritcle.wxss */
+.page-main{
+	padding:30rpx;
+	background-color: #fefefe;
+}
+.item{
+	border-bottom:1px solid #efefef;
+	padding:40rpx 0;
+}
+.item .title{
+	font-size: 34rpx;
+	color:#000;
+	font-weight: 500;
+}
+.date{
+	font-size: 24rpx;
+	color: #939393;
+	margin-top: 30rpx;
+}

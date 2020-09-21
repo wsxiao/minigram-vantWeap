@@ -31,27 +31,27 @@
         <view bindtap="jumpPage" data-type="/pages/question/question">
           <view class="item">
             <text class="label">性别</text>
-            <text class="label">女</text>
+            <text class="label">{{userQuestionRes.xingbie == 0?'男':'女'}}</text>
           </view>
           <view class="item">
             <text class="label">年龄</text>
-            <text class="label">35岁</text>
+            <text class="label">{{userQuestionRes.nianling}}</text>
           </view>
           <view class="item">
             <text class="label">身高</text>
-            <text class="label">170cm</text>
+            <text class="label">{{userQuestionRes.shengao}}</text>
           </view>
           <view class="item">
             <text class="label">体重</text>
-            <text class="label">70kg</text>
+            <text class="label">{{userQuestionRes.tizhong}}</text>
           </view>
           <view class="item">
             <text class="label">糖尿病</text>
-            <text class="label">一型糖尿病</text>
+            <text class="label">{{userQuestionRes.tangniaobing}}</text>
           </view>
           <view class="item">
             <text class="label">高血压</text>
-            <text class="label">无</text>
+            <text class="label">{{userQuestionRes.gaoxueya == 0?'没有':'有'}}</text>
           </view>
         </view>
       </view>

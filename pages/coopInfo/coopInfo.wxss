@@ -1,1 +1,37 @@
-/* pages/coopInfo/coopInfo.wxss */
+.page-main{
+	padding:30rpx;
+	text-align: center;
+	font-size: 30rpx;
+}
+.top-title{
+	font-size: 36rpx;
+	text-align: center;
+	margin-bottom:30rpx;
+}
+.top-title text{
+	font-size: 40rpx;
+	color:rgb(125,0,30)
+}
+/* .logo1{
+	width: 100%;
+} */
+.title{
+	margin-top:45rpx;
+	color:rgb(125,0,30);
+	font-size: 38rpx;
+	font-style: italic;
+	text-align: left;
+}
+.content{
+	text-align: left;
+	line-height: 45rpx;
+}
+.content view{
+	margin-top:30rpx;
+}
+.content-img{
+	margin-top:20rpx;
+}
+.content.nine view{
+	margin-top:20rpx;
+}

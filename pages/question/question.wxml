@@ -1,5 +1,3 @@
-
-
 <view class="page-main">
 	<!-- 立即体验 -->
 	<view>
@@ -113,6 +111,9 @@
 				<view class="item"> <text class="label">血压病症：</text> <text class="value">{{quesitionInfo.gaoxueya ==0?'没有':'有'}}</text> </view>
 			</view>
 		</view>
+
+		<view class="goback" bindtap="goBack">前往记血糖</view>
+		<view class="error" bindtap="agian">信息有误，重新作答</view>
 	</view>
 </view>
 

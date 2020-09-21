@@ -1,2 +1,115 @@
-<!--pages/coopInfo/coopInfo.wxml-->
-<text>pages/coopInfo/coopInfo.wxml</text>
+<view class="page-main">
+	<view class="top-title">带你走进 <text>御生堂</text> </view>
+	<image class="logo1" src="./../../common/images/御生堂logo1.jpg" mode="widthFix"></image>
+
+	<!-- 介绍 -->
+	<view class="title"> <van-icon name="bulb-o" />御生堂什么来头？</view>
+	<view class="content">
+		<view>
+			御生堂，始创建于大明万历年间（公元1608年），距今400余年的历史，曾供宫廷御药达250余年之久，是中国唯一一家以皇家专享、帝王亲赐的皇家“御”字为开头的四百年老号。
+		</view>
+
+
+		<view>
+			御生堂最初为山西榆次的“白氏药铺”。雍正八年，御生堂第七代传人白凌云，以医术精湛被当时的总督荐至宫中，担任御医达二十五年之久。白御医脉诊病情，望测病势，食医彰道，颇得皇帝、皇后赏识。
+		</view>
+
+		<view>
+			乾隆二十年（公元1755年），白凌云告老还乡之时，乾隆帝为感激其医术医德，亲笔御赐“御生堂”牌匾，意为“御为普济，生乃永盛”，白家老号遂正式更名为“御生堂”。
+			<image class="content-img" src="./../../common/images/pic_内容1.jpg" mode="widthFix"></image>
+		</view>
+
+		<view>
+			乾隆四十二年（1777年），白家新一代传人白永祥再度成为白家的第九代御医，谛造了中国历史上最长寿的帝王—乾隆（享年89岁）。鼎盛时期的御生堂全国各地分号达数百家，以祖传秘制方式制作的丸散膏丹享誉京、津、晋、冀。
+		</view>
+	</view>
+
+	<!-- 如今的御生堂如何？ -->
+	<view class="title"> <van-icon name="bulb-o" />如今的御生堂如何？</view>
+	<view class="content">
+		<image class="content-img" src="./../../common/images/pic_title.jpg" mode="widthFix"></image>
+		<view>
+			百年风雨后的御生堂，走出了一条独具特色的中医药企业之路，如今御生堂以传统的前店后厂模式融合互联网，构建了今天的北京御生堂健康产业集团，旨在打造中医药健康全产业链整合运营平台，目前已完成九大版块的整体战略布局。
+			<image class="content-img" src="./../../common/images/pci_内容6.jpg" mode="widthFix"></image>
+		</view>
+	</view>
+
+	<!-- 北京御生堂健康产业链九大板块 -->
+	<view class="title"> <van-icon name="bulb-o" />健康产业链九大板块</view>
+	<view class="content nine">
+		<view>
+			① <van-icon name="good-job-o" />药材版块，以北京御生堂本草科技公司为核心，将在全国优选设立中药材种、养殖及初加工基地，提供技术服务；
+		</view>
+		<view>
+			② <van-icon name="good-job-o" />研发版块，以北京御生堂中医药研究院为核心，研发产品、研究病症、教育培训人才，主要包括中医各类产品的配方及工艺研发，以及中医各种技术的研究与应用开发，职业技术及经营人才的培训；		</view>
+		<view>
+			③ <van-icon name="good-job-o" />药业版块，以北京御生堂制药有限公司为核心，主要进行中药饮片及中成药的生产及销售；
+		</view>
+		<view>
+			④ <van-icon name="good-job-o" />健康品版块，以北京御生堂保健食品有限公司为核心，以直销模式进行食品、保健品、化妆品、食疗产品、健康用品等的生产与销售；
+		</view>
+		<view>
+			⑤ <van-icon name="good-job-o" />商业版块，以北京御生堂营销管理有限公司为核心，在全国各省市成立销售子公司与药店连锁，主要包括药店、专卖店、网店及批发配送等业务；
+		</view>
+		<view>
+			⑥ <van-icon name="good-job-o" />医疗版块，以北京御生堂医疗科技有限公司为核心，开展中医馆及综合中医医院、中医院专科门诊的连锁及经营管理；
+		</view>
+		<view>
+			⑦ <van-icon name="good-job-o" />康养版块：以北京御生堂岐黄健康管理有限公司为核心，开展包括养生基地、养生馆及社区养老服务中心的连锁运营管理；
+		</view>
+		<view>
+			⑧ <van-icon name="good-job-o" />金融版块，以北京御生堂资本管理有限公司为核心，开展私募基金投资、产业链金融及保理服务；
+		</view>
+		<view>
+			⑨ <van-icon name="good-job-o" />文化版块：以御生堂中医药博物馆为主，进行中医药文化传承、交流、社会公益事业。
+		</view>
+	</view>
+
+	<!-- 资源整合 -->
+	<view class="title"> <van-icon name="bulb-o" />资源整合</view>
+	<view class="content">
+		<view>
+			北京御生堂健康产业集团整合多方优势资源，已在中医药健康产业中打造了四大连锁体系：康养服务连锁、健康产品连锁、中医医疗连锁、药店连锁；构筑了五大优势平台：一家行业内最大的中医药博物馆构筑了文化传播平台，三个生产基地、六个生产型企业构筑了产品生产供应平台，中医药研究院构筑了研发及专家平台，多家销售公司及国医馆、康养中心构筑了产品销售及服务平台，资本管理公司构筑了投融资的金融平台。
+			<image class="content-img" src="./../../common/images/pic_内容2.jpg" style="width:100%; height:80px"></image>
+		</view>
+	</view>
+
+	<!-- 明药性之理、精炮制之法、修仁德之心 -->
+	<view class="title"> <van-icon name="bulb-o" />明药性之理、修仁德之心</view>
+	<view class="content">
+		<view>
+			北京御生堂健康产业集团秉承“明药性之理、精炮制之法、修仁德之心” 的御生堂堂训，在严格遵循祖传秘制的方式基础上，按照现代化大生产的要求，精心选料、精心炮制，实现了传统秘方与现代工艺的完美融合。研发并生产了十大产品系列，中成药系列，普通中药饮片系列，单方直服饮片系列，贵系参茸系列，中药保健食品系列，秘制膏方系列，秘方药酒系列，秘方茶汤代餐功效食品系列，特效药妆系列以及健康日护产品系列等1000多个自主品牌产品！营销网络遍布全国，持续搭建和深化着北京御生堂在核心产业——健康产业的运营结构和战略方向。
+		</view>
+		<image class="content-img" src="./../../common/images/pic_内容3.jpg" style="width:100%; height:80px" ></image>
+	</view>
+	
+	<!-- 学古而不泥古，纳古融新 -->
+	<view class="title"> <van-icon name="bulb-o" />学古而不泥古，纳古融新</view>
+	<view class="content">
+		<view>
+			学古而不泥古，纳古融新，北京御生堂健康产业集团秉承御生堂宫廷中药秘方特色，以国粹中医中药现代化特色医疗为手段，传统疗法为主轴，以贯通古今，济世救人为办科理念，充分发挥老字号中医专科专病优势，形成了独特的经验和学术观点，特聘国医大师指导，精心推出了中医十大特色专科即肾病、糖尿病、心血管病、脾胃、肝病、骨病、皮肤病、男科、妇科和肥胖专科，并自行研制出一系列特色配套中药产品及用药治疗体系，除了以往推向市场的一系列有关精气神、抗衰老、降三高、更年期、益脾胃、补肝肾控制体重等调理产品外，还增加了像丸散膏丹、口服液，冲剂、片剂等多个注册产品，价格低廉，疗效显著，口碑甚佳，开创了新时代御生堂特色优势明显的专科体系业务，布局20家世界一流医疗、保健、颐养机构。	
+		</view>
+		<image class="content-img" src="./../../common/images/pic_内容4.jpg" mode="widthFix"></image>
+	</view>
+	
+	<!-- "互联网+御生堂"-->
+	<view class="title"> <van-icon name="bulb-o" />"互联网+御生堂"</view>
+	<view class="content">
+		<view>
+			随着互联网时代的到来，北京御生堂健康产业集团推出“互联网+御生堂”以促进全面战略布局发展，在国内建立多个分支机构，集团旗下企业十余家，包括北京御生堂中医博物馆、北京御生堂中医研究院、北京御生堂制药有限公司、北京御生堂集团石家庄制药有限公司、海南御生堂医药有限公司、北京御生堂保健食品有限公司、北京御生堂日用品有限公司、北京御生堂岐黄健康管理有限公司、北京御生堂中医门诊部有限公司、北京御生堂集团河南医药连锁有限公司、北京御生堂医疗科技有限公司、北京御生堂营销管理有限公司、北京御生堂本草科技有限公司、北京御生堂资本管理有限公司。
+		</view>
+		<image class="content-img" src="./../../common/images/pic_内容5.jpg" style="width:100%; height:80px"></image>
+	</view>
+
+	<!-- 北京御生堂的新面貌-->
+	<view class="title"> <van-icon name="bulb-o" />北京御生堂的新面貌</view>
+	<view class="content">
+		<view>
+			北京御生堂健康产业集团，秉承祖训，在中医药法颁布实施的今天，正在以崭新的面貌迎接着新的机遇与挑战，做为公众企业的御生堂，围绕“药”、“医”、“养”、“健”产业体系，药材、研发、药业、健康品、商业、医疗、康养、金融、文化九大版块链动，整合服务、运营两大平台协作，全程“互联网+”，誓将皇家御赐的品牌资源转化为社会资源，携手业内道同志合者共筑共享平台，将北京御生堂打造成为中国中医药健康全产业链领航企业！
+		</view>
+		<image class="content-img" src="./../../common/images/御生堂logo2.jpg" mode="widthFix"></image>
+	</view>
+
+
+
+</view>

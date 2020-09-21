@@ -23,6 +23,7 @@ Page({
     defaultDate: new Date().getTime(),
     beforeInput:'4.3',
     afterInput:'5.2',
+    userQuestionRes:{},
   },
 
   onLoad: function () {
@@ -54,6 +55,14 @@ Page({
     }
 
     this.getCurrentHour()
+
+  },
+
+  onShow: function(){
+    this.setData({
+      userQuestionRes: wx.getStorageSync('userQustionRes')
+    })
+    console.log(this.data.userQuestionRes)
 
   },
 

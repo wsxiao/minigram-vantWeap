@@ -1,2 +1,42 @@
-<!--pages/aritcle/aritcle.wxml-->
-<text>pages/aritcle/aritcle.wxml</text>
+<view class="page-main">
+	<view class="item">
+		<view class="title">
+			得了糖尿病，体重一直在下降，该如何补充营养？
+		</view>
+		<view class="date">
+			2020-09-09 来源：北京大药房有限公司
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">
+			得了糖尿病，体重一直在下降，该如何补充营养？
+		</view>
+		<view class="date">
+			2020-09-09 来源：北京大药房有限公司
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">
+			得了糖尿病，体重一直在下降，该如何补充营养？
+		</view>
+		<view class="date">
+			2020-09-09 来源：北京大药房有限公司
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">
+			得了糖尿病，体重一直在下降，该如何补充营养？
+		</view>
+		<view class="date">
+			2020-09-09 来源：北京大药房有限公司
+		</view>
+	</view>
+	<view class="item">
+		<view class="title">
+			得了糖尿病，体重一直在下降，该如何补充营养？
+		</view>
+		<view class="date">
+			2020-09-09 来源：北京大药房有限公司
+		</view>
+	</view>
+</view>

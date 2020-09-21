@@ -71,6 +71,26 @@ Page({
 		})
 	},
 
+	goBack(){
+		wx.setStorageSync('userQustionRes',  this.data.quesitionInfo)
+		wx.navigateBack()
+	},
+
+	agian(){
+		let info = {
+			flag: true,
+			xingbie:'',
+			nianling:'',
+			shengao:'',
+			tizhong:'',
+			tangniaobing:'',
+			gaoxueya:'',
+		}
+		this.setData({
+			quesitionInfo :info
+		})
+	},
+
 	/**
 	 * 生命周期函数--监听页面加载
 	 */

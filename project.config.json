@@ -24,7 +24,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -72,6 +72,20 @@
 					"id": -1,
 					"name": "用户信息",
 					"pathName": "pages/question/question",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公司简介",
+					"pathName": "pages/coopInfo/coopInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "专栏",
+					"pathName": "pages/aritcle/aritcle",
 					"scene": null
 				}
 			]
